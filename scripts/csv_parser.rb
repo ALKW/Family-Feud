@@ -61,13 +61,13 @@ class CSVParser
   def propagate_rounds(round)
     i = 0
     case round
-      in [String, String, Integer, *]
+    in [String, String, Integer, *]
       # "Question, Answer, Points"
       @@round_arr.push(round)
-      in [String, Integer, Integer, *]
+    in [String, Integer, Integer, *]
       # "Question, Answer, Points - Answer is integer"
       @@round_arr.push(round)
-      in [String, String, String, *]
+    in [String, String, String, *]
       # "Question, Answer, Answer"
       new_round = attach_points(round)
       @@round_arr.push(round)

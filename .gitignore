@@ -1,4 +1,4 @@
 .next/
 node_modules/
 .eslintcache
-
+.DS_Store
