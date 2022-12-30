@@ -24,7 +24,7 @@ export default function Login(props) {
           }}
           maxLength={4}
           value={props.roomCode}
-          placeholder={t("4 letter room code")}
+          placeholder={t("4 letter room code or something, idk.")}
         ></input>
       </div>
 
@@ -41,7 +41,7 @@ export default function Login(props) {
           onChange={(e) => {
             props.setPlayerName(e.target.value);
           }}
-          placeholder={t("enter your name")}
+          placeholder={t("enter your name to enter the fight")}
         ></input>
       </div>
       <div class="flex flex-row items-center space-x-5">
